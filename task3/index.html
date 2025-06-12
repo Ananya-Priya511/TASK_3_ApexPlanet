@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Advanced Web Skills Project</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="header">
+        <h1>Advanced Web Skills Project</h1>
+    </header>
+
+    <main>
+        <section id="quiz-section" class="section">
+            <h2 class="section-title">Programming Quiz</h2>
+            <p>Test your knowledge of responsive design, JavaScript, and APIs!</p>
+            <button id="start-quiz-btn" class="btn">Start Quiz</button>
+            <div id="quiz-container" class="quiz-container" style="display: none;">
+                <div id="question-count">Question 1 of 5</div>
+                <div id="score">Score: 0</div>
+                <div id="question"></div>
+                <div id="options" class="options-container"></div>
+                <button id="next-question-btn" class="btn" style="display: none;">Next Question</button>
+            </div>
+            <div id="quiz-result" class="quiz-result" style="display: none;"></div>
+        </section>
+
+        <section id="carousel-section" class="section">
+            <h2 class="section-title">Image Carousel</h2>
+            <div class="carousel-container">
+                <button id="prev-btn" class="carousel-btn">&leftarrow;</button>
+                <img id="carousel-image" src="" alt="Carousel Image" class="carousel-image">
+                <button id="next-btn" class="carousel-btn">&rightarrow;</button>
+                <div class="carousel-dots"></div>
+            </div>
+            <div class="carousel-info">Auto-advancing carousel with manual navigation • Image <span id="current-image-number">1</span> of <span id="total-images">4</span></div>
+        </section>
+
+        <section id="weather-section" class="section">
+            <h2 class="section-title">India Weather</h2>
+            <p>Fetch real-time weather data for India</p>
+            <button id="get-weather-btn" class="btn">Get Weather</button>
+            <div id="weather-display" class="weather-display" style="display: none;">
+                <h3 id="weather-city"></h3>
+                <p id="weather-temp" class="weather-temp"></p>
+                <p id="weather-condition" class="weather-condition"></p>
+                <div class="weather-details">
+                    <div>Humidity: <span id="weather-humidity"></span></div>
+                    <div>Condition: <span id="weather-overall-condition"></span></div>
+                </div>
+                <button id="refresh-weather-btn" class="btn">Refresh Data</button>
+            </div>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
